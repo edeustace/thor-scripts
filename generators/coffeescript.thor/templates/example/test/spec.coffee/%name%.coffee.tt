@@ -1,0 +1,8 @@
+describe "<%= name %>", ->
+
+  it "dummy spec", ->
+    expect(null).toNotBe null
+    null
+  
+
+ 
