@@ -14,10 +14,7 @@ class Coffeescript < Thor::Group
   end
 
   def chmod_on_scripts
-    `chmod +x #{name}/scripts/compile_js`
-    `chmod +x #{name}/scripts/create_js_lib`
-    `chmod +x #{name}/scripts/watch_src`
-    `chmod +x #{name}/scripts/watch_specs`
+    `chmod +x #{name}/scripts/project`
   end
   
 end
