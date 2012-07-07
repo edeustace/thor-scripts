@@ -1,0 +1,6 @@
+<html>
+  <title><%= name %></title>
+  <body>
+    hello world - welcome to <%= name %>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+# <%= name %>
+
+## Running
+    cd <%= name %>
+    npm install 
+    coffee server.coffee
