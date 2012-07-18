@@ -1,0 +1,5 @@
+var app = angular.module('<%=name%>', []);
+
+app.controller('MainCtrl', function($scope) {
+  $scope.name = 'World';
+});

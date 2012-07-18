@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app="<%= name %>" >
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS <%=name%></title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.angularjs.org/1.0.0/angular-1.0.0.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+ 
+     Hello {{name}}! 
+
+</body>
+</html>
