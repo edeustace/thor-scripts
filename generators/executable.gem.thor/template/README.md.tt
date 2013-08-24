@@ -1,0 +1,16 @@
+# <%= name %>
+
+an executable gem
+
+### installation
+
+    cd <%= name %>
+    gem install bundler
+    bundle install
+    rake build
+    gem install pkg/<%= name %>-<%= version %>.gem
+
+### developing
+
+    bundle exec bin/<%= name %>
+

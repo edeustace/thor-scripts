@@ -1,0 +1,27 @@
+require 'thor'
+
+require '<%= name %>/cmds'
+
+module <%= class_name %>
+
+  include Commands
+
+  class CLI < Thor
+
+    desc "ping MSG", "ping"
+    long_desc <<-LONGDESC
+
+    OPTIONS
+
+    ------------
+
+    reverse - reverse the message (defualt: false)
+
+    LONGDESC
+    option :reverse, :type => :boolean, :default => false
+    def ping(msg)
+      cmd = Commands::Ping.new
+      puts cmd.run(msg, options)
+    end
+  end
+end

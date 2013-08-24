@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+require '<%= name %>/cli'
+<%= class_name %>::CLI.start

@@ -1,0 +1,23 @@
+# -*- encoding: utf-8 -*-
+require File.expand_path('../lib/<%= name %>/version', __FILE__)
+
+name = "<%= name %>"
+
+Gem::Specification.new do |gem|
+  gem.authors       = ["<%= author %>"]
+  gem.email         = ["<%= email %>"]
+  gem.description   = %q{<%= description %>}
+  gem.summary       = gem.description
+  gem.homepage      = "<%= homepage %>"
+  gem.files         = `git ls-files`.split($\)
+  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
+  gem.name          = name
+  gem.require_paths = ["lib"]
+  gem.required_ruby_version = '>= <%= ruby_version %>'
+  gem.version       = <%= class_name %>::VERSION
+  gem.add_development_dependency "rspec", "~> 2.6"
+  gem.add_development_dependency "rake", "~> 10.1.0"
+  gem.add_dependency "thor"
+
+end
