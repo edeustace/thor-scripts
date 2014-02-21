@@ -1,0 +1,6 @@
+angular.module("<%= name %>").controller "Root", [
+  '$scope',
+  '$log',
+  ($scope, $log) -> 
+    $log.debug("Root controller..")
+]

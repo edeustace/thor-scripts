@@ -1,0 +1,14 @@
+# <%= name %> 
+
+
+## installing
+
+    npm install
+    bower install
+
+## running
+
+    ./bin/run
+
+* the navigate to [http://localhost:5000](http://localhost:5000)
+

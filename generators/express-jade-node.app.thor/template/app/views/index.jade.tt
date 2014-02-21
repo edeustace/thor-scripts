@@ -1,0 +1,17 @@
+extends layout
+
+block head
+
+block content
+  div(ng-app="<%= name %>", ng-controller="Root")
+
+    p Hello <%= name %>
+
+block scripts
+
+  script(src="/components/jquery/dist/jquery.js")
+  script(src="/components/angular/angular.js")
+  script(src="/components/lodash/dist/lodash.js")
+
+  != js('index') 
+
